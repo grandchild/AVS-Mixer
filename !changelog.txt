@@ -1,0 +1,55 @@
+AVS-Mixer changelog:
+
+beta 0.3.2
+-changed: switched input/parameter-by-midi (was button->parameter/slider->input, is now button->input/slider->parameter)
+-fixed: doesn't ask for saving a bunch of subpatches anymore. (subdued "Query Save")
+
+
+beta 0.3.1
+-added: blendmode selection via keyboard (makeshift)
+-added: reset parameter set by double-tapping Q,W,A,S
+-fixed: proper brightness implementation
+
+
+21.10.2010
+beta 0.3:
+-fixed: reloading mixer-subpatch also restarted the main renderer - the main output renderer is now in the root patch.
+-added: load MIDI controller setup from MIDI.ini file, saving/creating new settings via an external editor for now
+-added: user-individual(!) parameters will be saved on quit and automatically reloaded at startup.
+-added: the same parameters can now also be loaded/saved from the gui.
+-added: copy parameter sets from one input to the other with Q,W,A,S
+-added: statistics panel with fps and input resolutions (on hover)
+-added: new blendmode "fade over black"
+-added: maintenance mode ;)
+
+
+07.10.2010
+beta 0.2.1:
+-added: double click on main preview toggles gui fullscreen
+-added: proper representation of channelswitch and invert controls
+-fixed: resetting the parameters always works now
+
+
+03.10.2010
+beta 0.2:
+-changed: major rework of the internal layout, mixer can now be restarted seperately from the gui. (thanks for the tip, david!)
+-other: a few optimizations here and there - should run slightly faster now
+
+
+29.9.2010
+beta 0.1.1:
+-added: blendmode preview on hover over selection buttons
+-fixed: interface scaling/resizing with multiple screens
+-other: tidied up some patches, wrote some more in-patch documentation, etc.
+
+
+27.9.2010
+beta 0.1:
+-added: keystoning with seperate output renderer
+-added: root-patch for basic settings
+With those two it's now ready for actual use, hence beta status.
+Also:
+-added: controller overlay for parameter sliders
+-added: can now handle any combination of up to four different window names correctly
+-other: moved window capturing out of mixer patches & into main patch -> more flexible input switching/distribution
+-everything from alpha versions

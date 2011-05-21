@@ -1,0 +1,11 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta25.dtd" >
+   <PATCH nodename="C:\Users\1Leben\Documents\My Dropbox\lukas\vvvv\avsmixer\Mixer\callmenames.v4p" filename="C:\Users\1Leben\Documents\My Dropbox\lukas\vvvv\avsmixer\callmenames.v4p" systemname="callmenames">
+   <BOUNDS height="6000" left="6015" top="1980" type="Window" width="9000">
+   </BOUNDS>
+   <NODE systemname="Blend (EX9.Effect)" filename="Blend.fx" nodename="Blend (EX9.Effect)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2610" top="1440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Technique" slicecount="1" values="| Blend|">
+   </PIN>
+   </NODE>
+   </PATCH>
