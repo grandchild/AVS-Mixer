@@ -19,15 +19,15 @@ In the /etc folder is a zip containing a premade folder structure for you to use
 * I recommend using a small skin for XMPlay, so it does not get in your way too much: I use [Smallskin 2](http://support.xmplay.com/files_view.php?file_id=308) but there are more (e.g. [Min](http://support.xmplay.com/files_view.php?file_id=546)).
 
 ### Using AVS-Mixer with Winamp
-* You need to use Winamp of version 5.58 or older, as newer versions don't play nicely with AVS anymore. Any Winamp 5.x version should do. It should also come with a working AVS plugin installed so you can skip the next section.
-
-### player-independent
-* And if you want to play any source of audio (like from a DJ next to you, or the music from another player rerouted into linein) you'll need the [LineIn Plugin](http://www.winamp.com/plugin/linein-plugin-v1-80/84040) for Winamp.
+* You need to use Winamp of version 5.58 or older, as newer versions don't play nicely with AVS anymore. Any Winamp 5.x version should do. It should also come with a working AVS plugin installed so you may be able to skip the next section.
 
 ### Choosing your AVS's flavour
 * [Visbot kindly provides](http://avs.visbot.net/) close to all versions of AVS ever published. One of the 2.81 versions is recommended. Try d or b (or if you like a slightly different editor interface choose one of visbot's vis_avsmods further down).
 * Extract all the versions you'd like to try into the plugin directory next to the XMPlay directory.
 * You can now select a version to use from the vis-wrapper's configuration dialog (found in XMPlay's options).
+
+### player-independent
+* And if you want to play any source of audio (like from a DJ next to you, or the music from another player rerouted into linein) you'll need the [LineIn Plugin](http://www.winamp.com/plugin/linein-plugin-v1-80/84040) for Winamp.
 
 ## Running the Mixer
 * Start ROOT.v4p (better run as an ordinary patch and not actually "Run as Root"!)
