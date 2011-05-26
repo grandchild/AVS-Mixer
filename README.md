@@ -31,7 +31,7 @@ In the /etc folder is a zip containing a premade folder structure for you to use
 
 ## Running the Mixer
 * Start ROOT.v4p (better run as an ordinary patch and not actually "Run as Root"!)
-* Start XMPlay (multiple instances preferably, each can only run one AVS) then start AVS through R-Click > Options (you can and should set a keybort shortcut for starting AVS)
+* Start XMPlay (multiple instances preferably, each can only run one AVS) then start AVS through R-Click > Options (you can and should set a keyboard shortcut for starting AVS)
 * Focus the various AVS windows repeatedly and randomly until all have appeared as inputs in the Mixer.
 
 You're good to go!
