@@ -4,6 +4,7 @@
 
 ### Prerequisites
 You need [VVVV](http://vvvv.org/downloads). You will also need the Addonpack on that same page.
+
 Windows Aero mode is strongly recommended (only available with Windows Vista and 7) because only that allows the screengrabbing of obstructed windows. Otherwise you would need to lay out the windows side-by-side which is very space-consuming.
 
 ## Installation
@@ -12,6 +13,7 @@ In the /etc folder is a zip containing a premade folder structure for you to use
 
 ### Get and setup XMPlay
 [XMPlay](http://support.xmplay.com/index.php) is the recommended host for AVS right now because it is minimal and keeps AVS in it's own seperate native Win32 window - which is better for grabbing.
+
 * Install XMPlay to the above-mentioned directory so that there is a folder named 'XMPlay' in the base folder.
 * Next, you need the wrapper plug-ins for XMPlay, [Winamp VIS Wrapper rev.5 by Barna](http://www.nukular.ch/xmp-wavis_rev.5.zip).
 * I recommend using a small skin for XMPlay, so it does not get in your way too much: I use [Smallskin 2](http://support.xmplay.com/files_view.php?file_id=308) but there are more (e.g. [Min](http://support.xmplay.com/files_view.php?file_id=546)).
@@ -31,10 +33,12 @@ In the /etc folder is a zip containing a premade folder structure for you to use
 * Start ROOT.v4p (better run as an ordinary patch and not actually "Run as Root"!)
 * Start XMPlay (multiple instances preferably, each can only run one AVS) then start AVS through R-Click > Options (you can and should set a keybort shortcut for starting AVS)
 * Focus the various AVS windows repeatedly and randomly until all have appeared as inputs in the Mixer.
+
 You're good to go!
 
 ## The GUI
 ![GUI](https://github.com/grandchild/AVS-Mixer/raw/master/etc/GUI_simple.png)
+
 * The four small quads in the middle are the inputs (with image-processing applied). R-click to select input channel. The coloured frames indicate how much of that input is visible in the main output.
 * To the right of the inputs is the 2Mix-preview. It shows the mix between either the top or bottom row of inputs (note the white bar). Click an input to select that couple for previewing.
 * The big quad below is the main preview. It shows exactly what is happening in the Main Output renderer. Use this area to move (L-click-drag) and resize (R-click-drag) the GUI.
@@ -44,10 +48,13 @@ You're good to go!
 * Finally at the bottom left is the framerate display which, when hovered, will show you the input resolutions.
 
 The ROOT.v4p patch has some more options for setup (like output resolution and keystoning)
+
 ![root](https://github.com/grandchild/AVS-Mixer/raw/master/etc/ROOTpatch_small.png)
 
 ### Interfacing the GUI with MIDI
+
 Most parameters can be controlled with the nanoKontrol and the recommended_nanokontrol_scene.nktrl_data file loaded (the scene has to have MIDI channel 1 (not 0)):
+
 * The four left-most transport buttons (rew, play, loop, stop) correspond to the four inputs. The faders 1-5 correspond to the parameter. Move any fader while holding one or more of the four input buttons to change parameters. The second transparent fader gives you an idea where you are on the real fader.
 * The Kontrol faders 7, 8 and 9 correspond to the crossfaders (note that fader 9 is inverted to be more intuitive with the visual arrangement of the inputs in the GUI)
 * The buttons next to the crossfaders allow for fast switching between 0 and 1 position of the fader.
@@ -61,5 +68,7 @@ Most parameters can be controlled with the nanoKontrol and the recommended_nanok
 
 ## Credits
 Created by (Grandchild & Hurricane) == Effekthasch
+
 Patched by Grandchild with massive conceptual input by Hurricane
+
 Inspired greatly by micro.D's own AVS-Mixer
