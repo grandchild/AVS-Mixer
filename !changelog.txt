@@ -1,10 +1,18 @@
 AVS-Mixer changelog:
 
+
+01.06.2011
+beta 0.3.3
+-fixed: broken quick-fade buttons on korg.
+
+
+18.05.2011
 beta 0.3.2
 -changed: switched input/parameter-by-midi (was button->parameter/slider->input, is now button->input/slider->parameter)
 -fixed: doesn't ask for saving a bunch of subpatches anymore. (subdued "Query Save")
 
 
+??
 beta 0.3.1
 -added: blendmode selection via keyboard (makeshift)
 -added: reset parameter set by double-tapping Q,W,A,S
