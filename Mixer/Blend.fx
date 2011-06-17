@@ -290,14 +290,13 @@ float4 threshold(vs2ps In): COLOR {
 
 //wip
 float4 horwipe(vs2ps In): COLOR {
-    float wipe = saturate(In.TexCd.x-fader*2+1);
+    float wipe = saturate(In.TexCd.x*(param1*2-1)-param1+fader*2);
     return tex2D(Samp1, In.TexCd)*wipe+tex2D(Samp2, In.TexCd)*(1-wipe);
 }
 
 //wip
 float4 verwipe(vs2ps In): COLOR {
-    float sqrp1 = param1*param1;
-    float wipe = saturate(In.TexCd.y*(sqrp1*2-1)-(sqrp1*1)+fader*2);
+    float wipe = saturate(In.TexCd.y*(param1*2-1)-param1+fader*2);
     return tex2D(Samp1, In.TexCd)*(1-wipe)+tex2D(Samp2, In.TexCd)*wipe;
 }
 

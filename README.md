@@ -3,23 +3,26 @@
 ![Mixer-GUI](https://github.com/grandchild/AVS-Mixer/raw/master/etc/MixerComplete1.png)
 
 ### Prerequisites
-You need [VVVV](http://vvvv.org/downloads). You will also need the Addonpack on that same page.
+You need [VVVV](http://vvvv.org/downloads). You will also need the Addonpack on that same page. Follow the installation instructions for VVVV.
 
 Windows Aero mode is strongly recommended (only available with Windows Vista and 7) because only that allows the screengrabbing of obstructed windows. Otherwise you would need to lay out the windows side-by-side which is very space-consuming.
 
+
+This was made for, and is most rewarding with, mixing AVS, so a small guide for...
+# Setting up AVS
 ## Installation
-### Preparing folder structure (when using XMPlay, for Winamp see below)
-In the /etc folder is a zip containing a premade folder structure for you to use. The XMPlay folder is empty (except for a winamp.ini containing recommended AVS settings), this is where you should install XMPlay to and also the vis-wrapper plugin.
+### Prepared folder structure (when using XMPlay, for Winamp see below)
+In the /etc folder is a zip containing a premade folder structure for you to use. Inside the XMPlayAVS folder you will find a winamp.ini containing recommended AVS settings as well as two folders for skins and plugins. Put all XMPlay files in this folder and all plugins (AVS, VisWrapper & others) inside the plugin folder.
 
 ### Get and setup XMPlay
-[XMPlay](http://support.xmplay.com/index.php) is the recommended host for AVS right now because it is minimal and keeps AVS in it's own seperate native Win32 window - which is better for grabbing.
+[XMPlay](http://support.xmplay.com/index.php) is the recommended host for AVS right now because it is minimal and keeps AVS in it's own separate native Win32 window - which is better for grabbing.
 
 * Install XMPlay to the above-mentioned directory so that there is a folder named 'XMPlay' in the base folder.
 * Next, you need the wrapper plug-ins for XMPlay, [Winamp VIS Wrapper rev.5 by Barna](http://www.nukular.ch/xmp-wavis_rev.5.zip).
 * I recommend using a small skin for XMPlay, so it does not get in your way too much: I use [Smallskin 2](http://support.xmplay.com/files_view.php?file_id=308) but there are more (e.g. [Min](http://support.xmplay.com/files_view.php?file_id=546)).
 
 ### Using AVS-Mixer with Winamp
-* You need to use Winamp of version 5.58 or older, as newer versions don't play nicely with AVS anymore. Any Winamp 5.x version should do. It should also come with a working AVS plugin installed so you may be able to skip the next section.
+* If for some reason you want to use Winamp, you need to use Winamp of version 5.58 or older, as newer versions don't play nicely with AVS anymore. Any Winamp 5.x version should do. It should also come with a working AVS plugin installed so you could in theory be able to skip the next section.
 
 ### Choosing your AVS's flavour
 * [Visbot kindly provides](http://avs.visbot.net/) close to all versions of AVS ever published. One of the 2.81 versions is recommended. Try d or b (or if you like a slightly different editor interface choose one of visbot's vis_avsmods further down).
@@ -29,12 +32,18 @@ In the /etc folder is a zip containing a premade folder structure for you to use
 ### player-independent
 * And if you want to play any source of audio (like from a DJ next to you, or the music from another player rerouted into linein) you'll need the [LineIn Plugin](http://www.winamp.com/plugin/linein-plugin-v1-80/84040) for Winamp.
 
-## Running the Mixer
-* Start ROOT.v4p (better run as an ordinary patch and not actually "Run as Root"!)
-* Start XMPlay (multiple instances preferably, each can only run one AVS) then start AVS through R-Click > Options (you can and should set a keyboard shortcut for starting AVS)
-* Focus the various AVS windows repeatedly and randomly until all have appeared as inputs in the Mixer.
+# Running the Mixer
+## Getting started
+* Start ROOT.v4p. It's better run as an ordinary patch (simply double-click) and not actually opened with "Run as Root".
+* 3 windows will open after some time. One is the output which you can move wherever you like, most likely to a secondary screen. Another one is the GUI which will be explained in a section below. The third is the only actual VVVV patch window...
+* In this patch window called ROOT you can adjust some basic settings: type the names of the window(s) that you would like to grab, give the output resolution do you need, perform keystoning (activate buttons with right-click), selecting the main screen (that's not working properly yet...) and some other stuff.
+* Once you are finished, you may close this window with ALT+3, or you may elect to leave it in the background for later adjustments.
+* Now start your program you want to grab, in our case...
+* ...start XMPlay (multiple instances preferably, each can only run one AVS) then start AVS through R-Click > Options (you can and should set a keyboard shortcut for starting AVS)
+* Once you open a window with a name specified in the ROOT patch it should appear as one of the inputs in the mixer.
+* Note: if you specified, say, 3 entries of a window name in the ROOT patch, opening a fourth window of that kind will put that window in the 4th spot on that window name's list - i.e. it will never appear as an input, even if you close one of the initial 3 windows. You will have to close that 4th window and another one then open a new 3rd window.
 
-You're good to go!
+Now you're good to go!
 
 ## The GUI
 ![GUI](https://github.com/grandchild/AVS-Mixer/raw/master/etc/GUI_simple.png)
@@ -72,3 +81,5 @@ Created by (Grandchild & Hurricane) == Effekthasch
 Patched by Grandchild with massive conceptual input by Hurricane
 
 Inspired greatly by micro.D's own AVS-Mixer
+
+Questions/bugs/feedback can be directed to our (effekhasch's) email-address at googlemail.com
