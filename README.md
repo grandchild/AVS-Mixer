@@ -45,6 +45,8 @@ In the /etc folder is a zip containing a premade folder structure for you to use
 
 Now you're good to go!
 
+<iframe src="http://player.vimeo.com/video/45865498?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="900" height="506" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
 ## The GUI
 ![GUI](https://github.com/grandchild/AVS-Mixer/raw/master/etc/GUI_simple.png)
 
