@@ -2,6 +2,8 @@
 
 ![Mixer-GUI](https://github.com/grandchild/AVS-Mixer/raw/master/etc/MixerComplete1.png)
 
+A screencast demonstrating some of the features of the AVS-Mixer can be found at: http://vimeo.com/video/45865498
+
 ### Prerequisites
 You need [VVVV](http://vvvv.org/downloads). You will also need the Addonpack on that same page. Follow the installation instructions for VVVV.
 
@@ -44,9 +46,6 @@ In the /etc folder is a zip containing a premade folder structure for you to use
 * Note: if you specified, say, 3 entries of a window name in the ROOT patch, opening a fourth window of that kind will put that window in the 4th spot on that window name's list - i.e. it will never appear as an input, even if you close one of the initial 3 windows. You will have to close that 4th window and another one then open a new 3rd window.
 
 Now you're good to go!
-
-
-<iframe src="http://player.vimeo.com/video/45865498?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="900" height="506" frameborder="0" webkitAllowFullScreen="webkitAllowFullScreen" mozallowfullscreen="mozallowfullscreen" allowFullScreen="allowFullScreen"></iframe>
 
 
 ## The GUI
