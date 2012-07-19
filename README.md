@@ -2,7 +2,7 @@
 
 ![Mixer-GUI](https://github.com/grandchild/AVS-Mixer/raw/master/etc/MixerComplete1.png)
 
-A screencast demonstrating some of the features of the AVS-Mixer can be found at: http://vimeo.com/video/45865498
+A screencast demonstrating some of the features of the AVS-Mixer can be found at: http://vimeo.com/45865498
 
 ### Prerequisites
 You need [VVVV](http://vvvv.org/downloads). You will also need the Addonpack on that same page. Follow the installation instructions for VVVV.
