@@ -20,7 +20,7 @@ In the /etc folder is a zip containing a premade folder structure for you to use
 [XMPlay](http://support.xmplay.com/index.php) is the recommended host for AVS right now because it is minimal and keeps AVS in it's own separate native Win32 window - which is better for grabbing.
 
 * Install XMPlay to the above-mentioned directory so that there is a folder named 'XMPlay' in the base folder.
-* Next, you need the wrapper plug-ins for XMPlay, [Winamp VIS Wrapper rev.5 by Barna](http://www.nukular.ch/xmp-wavis_rev.5.zip).
+* Next, you need the wrapper plug-ins for XMPlay, [Winamp VIS Wrapper rev.5 by Barna](http://www.nukular.ch/xmp-wavis_rev.5.zip) (link is dead, use [this one meanwhile](https://effekthasch.org/ahf6aisaNiezi6o/xmp-wavis.zip)).
 * I recommend using a small skin for XMPlay, so it does not get in your way too much: I use [Smallskin 2](http://support.xmplay.com/files_view.php?file_id=308) but there are more (e.g. [Min](http://support.xmplay.com/files_view.php?file_id=546)).
 
 ### Using AVS-Mixer with Winamp
